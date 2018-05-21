@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1 Login
+  p.caution= error
+  form(method='POST',action='/login')
+    input(type='text',name='userName',placeholder='username')
+    input(type='submit',value='Login')
